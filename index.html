@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+
+    <br>
+    <div align = "center" class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h2>
+                    <span style = "color : rgb(114, 15, 228);">
+                        Ubuntu Firewall Management
+                       </span> 
+        </h2>
+        <br>
+        <br>
+
+        <h3> Installation</h3>
+<h4>
+        The Ubuntu Firewall can be installed by first updating your repo by :
+        <br>
+        <br>
+        <code>
+            apt-get update && apt-get upgrade
+            <br>
+            <img src="{{img}}" height="250" width = "500">
+            <br>
+            </code>
+            Install the package
+            <br>
+            <code>
+             
+            apt install ufw
+        </code>
+        <br>
+    </h4>
+        <h3> Checking  If Firewall Is Active</h3>
+        <h4>
+            The firewall status can be checked by:
+            <br>
+            <img src = "pc (4).jpg" height="250" width = "500">
+            <br>
+            <code>
+                sysemctl status ufw
+            </code>
+            
+        </h4>
+
+        <h3> Starting Firewall</h3>
+        <h4>
+            Starting the  Firewall deamon can be done by:
+            <br>
+            <img src = "pc (7).jpg" height="250" width = "500">
+<br>
+            <code>
+                ufw start
+            </code>
+            
+        </h4>
+        <h3> Staring The deamon allowing connections</h3>
+        <h4>
+            <code> 
+                ufw default allow outgoing
+            </code>
+        </h4>
+
+        <h3>Making Rules</h3>
+        <h4>
+            Allowing A service can be done by:
+            <br>
+            ufw allow socket or protocol
+            <br>
+            <img src="pc (9).jpg" height="250" width = "500">
+            <br>
+            <code>
+                ufw allow ssh
+            </code>
+           
+            <br> 
+            or
+            <code>
+                ufw allow 22
+            </code>
+            <br>
+            Allowing A specific Ip to connect to A specific port
+            <br>
+            <img src="pc (1).jpg" height="250" width = "500">
+            <br>
+            <code>
+                ufw allow from (your Ip) to any port 22 proto tcp
+            </code>
+            
+        </h4>
+
+<h3> Viewing Rules</h3>
+<h4> The existing Rules Can Be seen By:</h4>
+<img src="pc (2).jpg" height="250" width = "500">
+<br>
+<code> 
+    ufw status numbered
+</code>
+
+        <h3> Deleting Rules </h3>
+<h4> 
+Rules Can be deleted by:
+<br>
+ufw delete (rule number)
+<br>
+<img src="pc (5).jpg" height="250" width = "500">
+<br>
+<code>
+    ufw delete 1
+   
+</code> 
+  
+</h4>
+
+                </div>
+                </div>
+                </div>
+
+
+                
+                <script src = "/js/jquery.js"></script>
+                <script src = "/js/bootstrap.min.js"></script>
+               
+            
+</body>
+<div align = "center">
+<footer bgcolor="blue"> 
+<br>
+<br>
+<span style = "color : rgb(114, 15, 228);">
+  
+Group 4
+ <h3>
+    Members:
+ </h3>
+
+  Jackson Muta
+  <br>
+  <br>
+  Eric Kipruto
+ <br>
+ <br>
+ Ken Kiprotich
+ <br>
+ <br>
+ Sheilla Chepi
+<br>
+<br>
+</span>
+    </footer>
+</div>
+
+</html>
